@@ -1,0 +1,30 @@
+{
+  "defaultVersion": "airpods-pro-2",
+  "versions": [
+    {
+      "id": "airpods-pro-2",
+      "label": "AirPods Pro 2",
+      "file": "airpods-pro-2.txt"
+    },
+    {
+      "id": "airpods-pro-3",
+      "label": "AirPods Pro 3",
+      "file": "airpods-pro-3.txt"
+    },
+    {
+      "id": "airpods-max",
+      "label": "AirPods Max",
+      "file": "airpods-max.txt"
+    },
+    {
+      "id": "airpods-4",
+      "label": "AirPods 4",
+      "file": "airpods-4.txt"
+    },
+    {
+      "id": "beats-fit-pro",
+      "label": "Beats Fit Pro",
+      "file": "beats-fit-pro.txt"
+    }
+  ]
+}

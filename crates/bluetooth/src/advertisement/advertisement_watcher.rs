@@ -4,6 +4,7 @@ use windows::{
         BluetoothLEAdvertisementFilter, BluetoothLEAdvertisementReceivedEventArgs,
         BluetoothLEAdvertisementWatcher, BluetoothLEAdvertisementWatcherStatus,
         BluetoothLEAdvertisementWatcherStoppedEventArgs,
+        BluetoothLEScanningMode,
     },
     Foundation::TypedEventHandler,
 };
@@ -33,6 +34,10 @@ impl AdvertisementWatcher {
             dispatcher: EventDispatcher::new(),
         };
 
+        watcher
+            .watcher
+            .SetScanningMode(BluetoothLEScanningMode::Active)
+            .map_err(|_| Error::WindowsError)?;
         watcher.init()?;
 
         Ok(watcher)
